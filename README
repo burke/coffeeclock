@@ -1,0 +1,1 @@
+My espresso alarm clock. An Arduino shorts the "make coffee" button on my Saeco Via Venezia espresso machine, a ruby script on my macbook connects to a TCP server on my coffee server to issue commands. More detail coming later.

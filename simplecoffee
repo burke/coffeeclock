@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+# -*- ruby -*-
+require 'rubygems'
+require 'serialport'
+
+port = "/dev/tty.usbserial-A7006Rn0"
+baud = 9600
+data = 8
+stop = 1
+parity = SerialPort::NONE
+
+sp = SerialPort.new(port,baud,data,stop,parity)
+
+delay = ARGV.shift
+time  = ARGV.shift
+
+sleep delay.to_i
+
+sp.putc "a"
+sleep time.to_i
+sp.putc "b"
+sp.close
+

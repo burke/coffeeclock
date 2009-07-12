@@ -3,7 +3,7 @@
 
 require 'socket' 
 
-SERIAL_PORT = 5331
+SERIAL_PORT = 5333
 NAP_TIME    = 20*60
 
 class EspressoMachine
